@@ -23,7 +23,7 @@ const Navigation = () => {
   const connectWithMetamask = useMetamask();
   const connectWithWalletConnect = useWalletConnect();
   const disconnectWallet = useDisconnect();
-  var subtitle;
+  let title;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
@@ -32,7 +32,7 @@ const Navigation = () => {
 
   function afterOpenModal() {
     // references are now sync'd and can be accessed.
-    subtitle.style.color = '#9E9E9E';
+    title.style.color = '#9E9E9E';
   }
 
   function closeModal() {
@@ -113,7 +113,7 @@ const Navigation = () => {
         overlayClassName={theme.modalOverlay}
         contentLabel="Modal"
       >
-        <h6 className={theme.h6modal} ref={(_subtitle) => (subtitle = _subtitle)}>Connect your wallet</h6>
+        <h6 className={theme.h6modal} ref={(_title) => (title = _title)}>Connect your wallet</h6>
         <button className={theme.closeBtn} onClick={closeModal}></button>
 <button className={themes.buttonConnect} style={{background: "rgb(219 102 4)", color: "#fff"}}
           onClick={ () => { connectWithMetamask(); closeModal();}}><i className={themes.metamask}></i> METAMASK WALLET</button>
