@@ -209,6 +209,7 @@ const Upload = () => {
               onClick={() => setFile(undefined)}
               width={250}
               height={250}
+              alt=""
             />
           ) : (
             <div

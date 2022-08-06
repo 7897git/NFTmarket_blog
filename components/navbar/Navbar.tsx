@@ -23,7 +23,7 @@ const Navigation = () => {
   const connectWithMetamask = useMetamask();
   const connectWithWalletConnect = useWalletConnect();
   const disconnectWallet = useDisconnect();
-  let subtitle;
+  var subtitle;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
