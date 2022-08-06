@@ -11,7 +11,7 @@ npm install
 ```
 #### thirdweb
 
-create .env.local file, put PRIVATE_KEY=c32d7**********PRIVATE_KEY. change contract address at const/address, change all "activeChainId = ChainId.___"
+create .env.local file, put PRIVATE_KEY=YOUR_PRIVATE_KEY. change contract address at const/address, change all "activeChainId = ChainId.___"
 
 
 #### Sanity
