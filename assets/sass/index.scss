@@ -1,0 +1,100 @@
+.layout {
+    padding: 70px 15px 20px;
+    .container_layout {
+        max-width: 1124px;
+        width:100%;
+        margin: auto;
+        .blog_banner {
+            background-image: $banner;
+            position: fixed;
+            text-align: center;
+            width: -webkit-fill-available;
+            height: 200px;
+            left: 0;
+            top: 55px;
+            padding: 50px;
+            z-index: -999;
+            .overlay {
+                background: rgb(240,240,240);
+                background: linear-gradient(0deg, rgba(240,240,240,1) 0%, rgba(0,0,6,0) 55%, rgba(0,0,6,0) 100%);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 200px;
+                width: -webkit-fill-available;
+            }
+            .banner_title {
+                color: whitesmoke;
+                font-size: 2.5rem;
+                margin: 0;
+            }
+            .banner_subtitle {
+                color: #dbdbdb;
+            }
+        }
+    }
+}
+
+.mt_3 {margin-top: 18%;
+@include mobile {margin-top: 55%;}
+}
+.smallDivider {margin: 0 0 30px;}
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font: 14px arial;
+  border-radius: 30%;
+  overflow: hidden;
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 5px solid #3498db;
+      width: 25px;
+      height: 25px;
+      -webkit-animation: spin 1s linear infinite; /* Safari */
+      animation: spin 1s linear infinite;
+    }
+
+    /* Safari */
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+}
+
+.Spacer3 {
+    margin: 30%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.mobile_only {
+    display: none !important;
+    @include mobile {
+        display: block;
+    }
+}
+
+.desktop_only {
+    display: block;
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+@include mobile {
+    flex-wrap: wrap;}
+}

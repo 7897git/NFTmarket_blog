@@ -1,0 +1,80 @@
+.claim_layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 30px;
+@include mobile {
+    grid-template-columns: 1fr;}
+    .airdropBox, .transferBox {
+        background: rgb(47,29,246);
+        background: linear-gradient(128deg, rgba(47,29,246,0.7231267507002801) 37%, rgba(20,202,255,1) 72%, rgba(3,170,187,0.9051995798319328) 100%);
+        border: 1px solid #666;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 0 15px -2px #666;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+.formCopy {
+    display: flex;
+    max-width: 375px;
+    align-items: center;
+    justify-content: center;
+.inputCopy {
+    width: -webkit-fill-available;
+    background: transparent;
+    color: #fff;
+    border: none;
+    cursor: copy;
+    resize: none;}
+.inputCopy:focus {border:none;outline:none;}
+}
+.texth2 {
+    color: #fff;
+    text-shadow: 3px 1px 8px #000000b0;
+}
+        .symbol {
+            font-size: 20px;
+            font-weight: 100;
+            position: relative;
+            top: -11px;
+            right: -7px;
+        }
+    .tranferInput {
+        display: flex;
+        flex-direction: column;
+        .textInput {
+            padding: 12px 10px;
+            border: 2px solid #03a9f4a6;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            }
+        }
+    }
+}
+.horderBox {
+    display: flex;
+    .holderGrid {
+        border: 1px solid;
+        border-radius: 8px;
+        box-shadow: 0 0 13px -2px #000;
+        padding: 0 10px;
+        width: 100%;
+        max-width: 450px;
+        max-height: 450px;
+        overflow-y: auto;
+        background: rgba(255, 255, 255, 0.43);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.9px);
+        -webkit-backdrop-filter: blur(7.9px);
+        margin: auto;
+        .holderItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+}
+.spacerBottom {border-bottom: 1px solid #666;}
+}

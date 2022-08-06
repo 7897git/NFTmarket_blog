@@ -1,0 +1,48 @@
+/* Fonts
+-------------------------------------------------- */
+$primary-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$secondary-font-family: 'Roboto Condensed', sans-serif;
+$tertiary-font-family: Martel, serif;
+
+/* Colors
+-------------------------------------------------- */
+$primary-color: #1eaedb;
+$primary-color-hover: #0fa0ce;
+
+$secondary-color: #12302e;
+
+$button-text-color: #fff;
+$button-background-color: #33c3f0;
+
+$button-text-color-hover: #fff;
+$button-background-color-hover: #1eaedb;
+
+$colorBg_primary: #3773f5;
+$colorBg_secondary: rgb(173 173 173);
+
+$teal: #009688;
+$greylight: #6666661f;
+$white: #fff;
+$dark: #121222;
+$halfDark: rgb(38 41 54 / 79%);
+$lightgrey: #f2f2f2;
+$darkGrey: #9e9e9e;
+$purple: #3f51b5;
+$lightPurple: rgb(130 71 229 / 60%);
+$shadow: #00000033 0px 3px 1px -2px, #00000024 0px 2px 2px 0px, #0000001f 0px 1px 5px 0px;
+$inset: inset 0px 1px 11px -3px #eeeeee7a;
+//icon&image
+$poligon: url('../../public/icons/poly.png');
+$close: url('../../public/icons/x.svg');
+$metamask: url('../../public/icons/metamask.svg');
+$walletconnect: url('../../public/icons/walletconnect.svg');
+$coinbase: url('../../public/icons/coinbase.svg');
+$banner: url('../../assets/image/bg.png');
+
+// Mobile breakpoints
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 767.98px) {
+    @content;
+  }
+}
+

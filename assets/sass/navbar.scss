@@ -1,0 +1,38 @@
+.navbar {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    box-shadow: 3px 1px 20px -2px rgb(0 0 0 / 20%);
+    z-index: 999;
+    .nav_container {
+        margin: 0 40px;
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+@include mobile {margin: 0 15px;}
+        .logo_section {
+            width: 42px;
+            height: 42px;
+            .logo {
+                    cursor: pointer;
+                }
+        }
+.navLink_section {
+    width: auto;
+    display: flex;
+    grid-gap: 10px;
+    .navLink {
+        padding: 5px 10px;
+        border: 1px dotted;
+        border-radius: 5px;
+       }
+    .navLink:hover {
+        background-color: #3773f5;
+        color: #fff;
+        box-shadow: $shadow;
+       }
+     }
+  }
+}

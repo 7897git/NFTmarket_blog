@@ -1,0 +1,65 @@
+.listing_content {
+    display: flex;
+    justify-content: center;
+    grid-gap: 30px;
+@include mobile {
+    flex-wrap: wrap;}
+    .leftListing {
+        max-width: 500px;
+        .mainNftImage{
+            object-fit: cover;
+            object-position: center;
+            max-width: 500px;
+            max-height: 500px;
+@include mobile {
+    width: 100% !important;
+    height: 385px !important;}
+        }
+    }
+.rightListing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 15px -3px #666;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.9px);
+    -webkit-backdrop-filter: blur(7.9px);
+    .descHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .user{font-size: 15px;background: #fff;padding: 5px 10px}
+        }
+    .descBody {
+        display: block;
+        .nftPrice {
+            background: $lightPurple;
+            color: $white;
+            margin-top: -120px;
+            border: 1px dotted;
+            width: fit-content;
+            border-radius: 5px;
+            padding: 6px 16px;
+            display: flex;
+            align-items: center;
+            grid-gap: 10px;
+@include mobile {margin-top: 0px;}
+            .poly_logo {
+                display: block;
+                background-image: $poligon;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-size: cover;
+                background-position: center;
+                }
+            }
+        }
+    }
+}
+

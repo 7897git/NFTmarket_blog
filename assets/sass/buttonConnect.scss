@@ -1,0 +1,45 @@
+.connect, .disconnect {width:auto;cursor:pointer}
+
+.buttonConnect {
+    display: flex;
+    grid-gap: 10px;
+    padding: 5px 15px;
+    margin: 5px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    border-radius: 8px;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.metamask {
+    background: $metamask;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.walletconnect {
+    background: $walletconnect;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.coinbase {
+    background: $coinbase;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

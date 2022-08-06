@@ -1,0 +1,120 @@
+.listing_layout {
+    padding: 0 0 30px;
+    .listing_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 30px;
+@include mobile {
+        grid-template-columns: 1fr;}
+    }
+    .nftBox {
+        box-shadow: $shadow;
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.44);
+        backdrop-filter: blur(5.1px);
+        -webkit-backdrop-filter: blur(5.1px);
+            }
+    .nftMedia {
+        object-fit: cover !important;
+        object-position: center !important;
+        width: 100%;
+        height: 354.67px;}
+    .body_listing {
+        padding: 20px;
+    .bottomNav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price_list {
+            display: flex;
+            align-items: center;
+            grid-gap: 5px;
+            margin: 0px;
+            background-color: $purple;
+            color: $white;
+            border-radius: 25px;
+            width: fit-content;
+            padding: 5px 10px;
+            position: relative;
+            float: right;
+        }
+.poly_logo {
+    display: block;
+    background-image: $poligon;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;}
+        .iconButton {
+            display: flex;
+            align-items: center;
+            grid-gap: 15px;
+            .icon {
+                color: $white;
+                display: flex;
+                align-items: center;
+                grid-gap: 5px;
+                padding: 5px;
+                background: $dark;
+                border-radius: 50%;
+            }
+        }
+    }
+.title_page {
+    margin: 0px 0px 20px;
+    background: $white;
+    padding: 0 10px;
+    width: fit-content;
+}
+    }
+    .title_PageContainer {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+@include mobile {
+    flex-wrap: wrap;
+    justify-content: center;}
+.title_page {
+    background: $white;
+    padding: 0 15px;
+}
+        .listingTypeContainer{
+            display: flex;
+            grid-gap: 10px;
+            align-items: center;
+        }
+
+        .listingType {
+          opacity: 0;
+          width: 0;
+          position: fixed;
+        }
+
+        .listingTypeLabel {
+          display: inline-block;
+          background-color: $halfDark;
+          color: $darkGrey;
+          box-shadow: $inset;
+          padding: 5px 15px;
+          font-size: 15px;
+          border: 0px solid $halfDark;
+          border-radius: 25px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+        .listingType:checked + label {
+          border: 3px solid transparent;
+          border-radius: 25px;
+          color: $white;
+          box-shadow: $shadow;
+          background: linear-gradient(to right, #418dff, #3f51b5), linear-gradient(to right, #418dff, #3f51b5);
+          background-clip: padding-box, border-box;
+          background-origin: padding-box, border-box;
+        }
+    }
+}

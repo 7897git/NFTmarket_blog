@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --font-family: 'Poppins', sans-serif;
+
+  --gradient: linear-gradient(89.97deg, #EB1484 1.84%, #c81cc5 102.67%);
+  --primary_btn: linear-gradient(101.12deg, #1652f0 27.35%, #3773f5 99.99%, #4685c6 100%, #1652f0 100%);
+  
+  --primary-color: #1652f0;
+  --secondary-color: #999;
+
+  --color-bg: #24252d;
+  --color-card : #2A2D3A;
+  --color-footer : #24252D;
+}
+body {
+    font-family: var(--font-family);
+    margin: 0px;
+    background-color: rgb(0 0 0 / 30%);
+    color: rgba(20,21,25,.9);
+}
+a {text-decoration: none;}
+
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email], {
+  font-size: 18px;
+  font-size: max(16px, 1em);
+  font-family: inherit;
+  padding: 0.25em 0.5em;
+  background-color: #fff;
+  border: none;
+  outline: none;
+}
+
+input:not(textarea) {
+  line-height: 1;
+  border: none;
+  outline: none;
+}
+
+input[type="file"] {
+  font-size: 0.9em;
+  padding-top: 0.35rem;
+}
+
+input[readonly] {
+  border-style: dotted;
+  cursor: not-allowed;
+  color: #777;
+}
+
+input:focus {
+  box-shadow: 0 0 13px -2px rgba(255, 255, 255, 0.43);
+  border: 1px solid rgba(255, 255, 255, 0.43);
+  outline: 3px solid transparent;
+}
+
+textarea.input {
+  resize: vertical;
+}
+
+input:not([type=submit]):not([type=file]) {
+   /* omg so much cleaner */
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 8px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(20,21,25,.9); 
+  border-radius: 8px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #121222; 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+

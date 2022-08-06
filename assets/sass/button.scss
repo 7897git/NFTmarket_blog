@@ -1,0 +1,35 @@
+.button {
+    background-color: $button-background-color;
+    color: $button-text-color;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button_md {
+    background-color: $button-background-color;
+    color: $button-text-color;
+    border: none;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: $primary-color-hover;
+    box-shadow: $shadow;
+}
+
+.button_md:hover {
+    background-color: $primary-color-hover;
+    box-shadow: $shadow;
+}
